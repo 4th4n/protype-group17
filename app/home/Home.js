@@ -216,7 +216,7 @@ const App = () => {
                     <Card sx={{ maxWidth: '95%', backgroundColor: '#fff' , borderRadius: 8,boxShadow: '0 2px 4px rgba(1, 1, 1, 0.6)'}}>
                       <CardMedia
                         component="img"
-                        height="200"
+                        height="150"
                         width="100%"
                         image={item.image}
                         alt={item.name}
