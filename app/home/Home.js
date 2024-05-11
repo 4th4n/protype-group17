@@ -4,12 +4,11 @@ import SearchIcon from '@mui/icons-material/Search';
 import MicIcon from '@mui/icons-material/Mic';
 import StopIcon from '@mui/icons-material/Stop';
 
-
 const items = [
   { id: 1, name: 'Fried Chicken', price: 10, image: 'https://th.bing.com/th/id/R.cb182248100eedb0482c648c52fdd112?rik=LZ6TBSIgTXyU7w&riu=http%3a%2f%2fstatic3.businessinsider.com%2fimage%2f56be399e2e526558008b7091-1333-1000%2ffried-chicken.jpg&ehk=7yk5YorCaCrCBwdJS8plwF2onEYnPlUxKKZXhpSj2NU%3d&risl=&pid=ImgRaw&r=0.jpg' },
   {id: 2, name: 'Spaghetti', price: 20, image: 'https://th.bing.com/th/id/OIP.AX3eF50qIH9YKzMZT0Zo0wHaE6?rs=1&pid=ImgDetMain' },
   { id: 3, name: 'Noodles',  price: 25, image:'https://tasteofperth.files.wordpress.com/2011/05/img_3464.jpg'},
-  { id: 4, name: 'Burger', price: 30,image:'https://thumbs.dreamstime.com/b/tasty-hamburger-11498595.jpg'},
+  { id: 4, name: 'Burger', price: 30,image:'https://4.bp.blogspot.com/-RIh2M4MJCRk/Vr5pG8sbUxI/AAAAAAAAmBo/KNc5ln_bW8Y/s1600/yum.jpg'},
   { id: 5, name: 'Pizza', price: 23,image:'https://images.pexels.com/photos/2619967/pexels-photo-2619967.jpeg?cs=srgb&dl=pizza-2619967.jpg&fm=jpg' },
   { id: 6, name: 'Sandwich ham/cheese',price: 17, image:'https://bigoven-res.cloudinary.com/image/upload/t_recipe-1280/grilled-cheese-and-ham-sandwic-71d134.jpg' },
   { id: 7, name: 'Chicken Burger',price: 20, image:'https://th.bing.com/th/id/OIP.X3OWtmBoLynaTq8mw9wPBwHaHa?rs=1&pid=ImgDetMain' },
@@ -202,19 +201,19 @@ const App = () => {
         </Toolbar>
       </AppBar>
       {!checkoutView ? (
-        <Grid container spacing={2} style={{ marginTop: '1rem' }}>
+        <Grid container spacing={0} style={{ marginTop: '1rem' }}>
           <Grid item xs={12} md={9}>
             <Typography variant="h5" gutterBottom>
               Menu
             </Typography>
-            <Grid container spacing={2}>
+            <Grid container spacing={1}>
               {items
                 .filter((item) =>
                   item.name.toLowerCase().includes(searchTerm.toLowerCase())
                 )
                 .map((item) => (
                   <Grid item key={item.id} xs={12} sm={6} md={3} lg={3}>
-                    <Card sx={{ maxWidth: '100%', backgroundColor: '#fff' }}>
+                    <Card sx={{ maxWidth: '95%', backgroundColor: '#fff' , borderRadius: 8,boxShadow: '0 2px 4px rgba(1, 1, 1, 0.6)'}}>
                       <CardMedia
                         component="img"
                         height="200"
@@ -263,7 +262,7 @@ const App = () => {
               Shopping Cart
             </Typography>
             {cart.map((item) => (
-              <Card key={item.id} style={{ marginBottom: '20px', border: '1px solid #e0e0e0', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', backgroundColor: '#fff' }}>
+              <Card key={item.id} style={{ marginBottom: '20px', border: '1px solid #e0e0e0', borderRadius: '20px', boxShadow: '0 2px 4px rgba(1, 1, 1, 0.6)', backgroundColor: '#fff' }}>
                 <CardContent>
                   <Typography variant="subtitle1">{item.name}</Typography>
                   <Typography variant="body2" color="text.secondary">{item.description}</Typography>
