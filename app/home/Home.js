@@ -10,7 +10,7 @@ const items = [
   { id: 3, name: 'Noodles',  price: 25, image:'https://tasteofperth.files.wordpress.com/2011/05/img_3464.jpg'},
   { id: 4, name: 'Burger', price: 30,image:'https://4.bp.blogspot.com/-RIh2M4MJCRk/Vr5pG8sbUxI/AAAAAAAAmBo/KNc5ln_bW8Y/s1600/yum.jpg'},
   { id: 5, name: 'Pizza', price: 23,image:'https://images.pexels.com/photos/2619967/pexels-photo-2619967.jpeg?cs=srgb&dl=pizza-2619967.jpg&fm=jpg' },
-  { id: 6, name: 'Sandwich ham/cheese',price: 17, image:'https://bigoven-res.cloudinary.com/image/upload/t_recipe-1280/grilled-cheese-and-ham-sandwic-71d134.jpg' },
+  { id: 6, name: 'ham/cheese',price: 17, image:'https://bigoven-res.cloudinary.com/image/upload/t_recipe-1280/grilled-cheese-and-ham-sandwic-71d134.jpg' },
   { id: 7, name: 'Chicken Burger',price: 20, image:'https://th.bing.com/th/id/OIP.X3OWtmBoLynaTq8mw9wPBwHaHa?rs=1&pid=ImgDetMain' },
   { id: 8, name: 'Siomai', price: 22,image:'https://i.pinimg.com/originals/46/dc/bf/46dcbfc15c9113853aaec3d5ddeb3cf7.jpg' },
   { id: 9, name: 'Mineral Water', price: 18,image:'https://www.pngitem.com/pimgs/m/59-598766_since-1991-nature-s-spring-brings-you-safe.png'},
